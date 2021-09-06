@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+  --bg-color-buttons: #113662;
+  --bg-color-input: #c3d9d5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  text-decoration: none;
+  background: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+h1 {
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: "Open sans", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  font-size: 16px;
+  height: 40px;
+  width: 100%;
+  padding: 0 20px;
+  border-radius: 10px;
+  color: var(--bg-color-buttons);
+}
+input:focus {
+  background-color: 1px solid var(--primary-color);
+}
+input::placeholder {
+  font-size: 14px;
+  color: rgba(17, 54, 98, 0.5);
+}
+
+.container {
+  width: 650px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.container h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.button-generic {
+  background-color: var(--bg-color-buttons);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  width: 50px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.button-generic:hover {
+  background-color: rgba(17, 54, 98, 0.85);
+  letter-spacing: 1px;
+}
+
+.container .container-add-tarefas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.container .container-add-tarefas .input-new-tarefas {
+  margin-right: 10px;
+  background-color: var(--bg-color-input);
+}
+.container .container-add-tarefas .button-add-tarefas {
+  width: 150px;
+  height: 40px;
+}
+.container .local-add-tarefas {
+  padding-left: 20px;
+  font-size: 18px;
+  counter-reset: section;
+}
+.container .local-add-tarefas li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.container .local-add-tarefas li p {
+  width: 100%;
+}
+.container .local-add-tarefas li::before {
+  counter-increment: section;
+  content: counters(section, ".") ". ";
+}
+.container .local-add-tarefas .button-remove-item-tarefa {
+  width: 100px;
+  height: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
