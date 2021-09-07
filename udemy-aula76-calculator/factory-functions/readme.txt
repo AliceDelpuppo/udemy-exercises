@@ -1,0 +1,1 @@
+Utilização de factory functions apenas para aprendizado. Neste exemplo, de uma calculadora, não seria necessário factory functions. Pois, não precisamos de uma função para criar calculadoras, já que temos somente uma.

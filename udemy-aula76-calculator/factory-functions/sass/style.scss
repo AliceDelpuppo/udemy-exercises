@@ -1,0 +1,143 @@
+// Style genérico usado para vários arquivos que o objetivo é o JavaScript
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+:root {
+    --primary-color: rgb(17, 86, 102);
+    --primary-color-darker: rgb(9, 48, 56);
+    --bg-color-buttons: #113662;
+    --bg-color-input: #c3d9d5;
+}
+
+// Resets
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+ul,
+ol,
+li {
+    // list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    text-decoration: none;
+    background: none;
+    cursor: pointer;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+h1 {
+    vertical-align: baseline;
+    border: 0;
+    outline: 0;
+    // font: inherit;
+    // line-height: 1px;
+}
+// /Resets
+
+body {
+    background-color: var(--primary-color);
+    font-family: "Open sans", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input,
+label,
+button {
+    // display: block;
+    // width: 100%;
+    // margin-bottom: 10px;
+}
+
+input {
+    font-size: 16px;
+    height: 40px;
+    width: 100%;
+    padding: 0 20px;
+    border-radius: 10px;
+    color: var(--bg-color-buttons);
+
+    &:focus {
+        background-color: 1px solid rgb(17, 86, 102);
+    }
+
+    &::placeholder {
+        font-size: 14px;
+        color: rgba($color: #113662, $alpha: 0.5);
+    }
+}
+
+.container {
+    width: 500px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+}
+
+.button-generic {
+    background-color: var(--bg-color-buttons);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    width: 50px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba($color: #113662, $alpha: 0.85);
+        letter-spacing: 1px;
+    }
+}
+
+.container {
+    .calculator {
+        width: 100%;
+        .display {
+            margin-bottom: 10px;
+            font-size: 32px;
+            width: 100%;
+            text-align: right;
+            border: 1px solid #113662;
+        }
+
+        .button {
+            padding: 6px;
+            background-color: rgba($color: gray, $alpha: 0.2);
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgba($color: gray, $alpha: 0.4);
+            }
+        }
+    }
+}
